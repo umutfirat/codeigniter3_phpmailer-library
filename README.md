@@ -29,7 +29,7 @@ class Mailsender
         include_once APPPATH."third_party/PHPMailer/class.smtp.php";
     }
 
-    public function load()
+    public function newMail()
     {
         $objMail = new PHPMailer;
         return $objMail;
